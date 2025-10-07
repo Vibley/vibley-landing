@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vibley — Meet People Who Match Your Vibe</title>
+  <meta name="description" content="Vibley connects you with genuine people nearby who share your energy — real friendships, not endless swipes." />
+  <meta property="og:title" content="Vibley — Meet People Who Match Your Vibe" />
+  <meta property="og:description" content="Join Vibley: a new social experience built around vibes, not validation." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#6c4ef7" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #121a33;
+      --muted: #9fb0ffcc;
+      --text: #ecf0ff;
+      --brand: #6c4ef7;
+      --brand-2: #29c1f7;
+      --ring: 0 0 0 3px color-mix(in oklab, var(--brand) 40%, transparent);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; scroll-behavior:smooth;}
+    body{
+      margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, #1a2455 0%, transparent 60%),
+                 radial-gradient(900px 600px at -10% 20%, #12317a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1020, #0b1020);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1120px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:blur(8px); background:rgba(11,16,32,.9); border-bottom:1px solid rgba(255,255,255,.06); z-index:50}
+    .nav{display:flex; align-items:center; justify-content:space-between}
+    .logo{display:flex; gap:10px; align-items:center; font-weight:700}
+    .logo-badge{display:grid; place-items:center; width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+    .btn{appearance:none; border:none; cursor:pointer; font-weight:700; border-radius:14px; padding:14px 18px; transition:.25s ease; outline:none}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:white}
+    .btn-primary:hover{transform:translateY(-1px);}    
+    .btn-ghost{background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,.14)}
+    .hero{padding:96px 0 40px}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:60px;}
+    @media(max-width:900px){.grid-2{grid-template-columns:1fr;}}
+    .headline{font-size:clamp(36px,6vw,64px); line-height:1.05; margin:0 0 12px;}
+    .headline-gradient {background: linear-gradient(90deg, #6c4ef7, #29c1f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+    .highlight-box {background: rgba(108, 78, 247, 0.1); border-left: 4px solid var(--brand); padding: 16px 18px; border-radius: 10px; font-size: 18px; color: var(--text); margin-bottom: 28px; animation: glowFade 3s ease-in-out infinite alternate;}
+    @keyframes glowFade {from { box-shadow: 0 0 10px rgba(108,78,247,0.3); } to { box-shadow: 0 0 20px rgba(41,193,247,0.4); }}
+    .muted{color:var(--muted)}
+    .cta-row{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+    .card{background: color-mix(in oklab, var(--card) 92%, transparent); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:22px; box-shadow: 0 20px 60px rgba(3,6,20,.55)}
+    form{display:grid; gap:14px}
+    label{font-weight:600}
+    input, select{width:100%; border-radius:12px; background:#0f172a; border:1px solid rgba(255,255,255,.12); color:var(--text); padding:14px 14px; font-size:16px; outline:none}
+    input:focus{box-shadow: var(--ring); border-color: color-mix(in oklab, var(--brand) 40%, white 0%)}
+    .form-row{display:grid; gap:12px; grid-template-columns:1fr 1fr}
+    @media (max-width: 700px){.form-row{grid-template-columns:1fr}}
+    .small{font-size:12px; color:var(--muted)}
+    footer{padding:40px 0; color:var(--muted); font-size:14px}
+    .foot-grid{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo" aria-label="Vibley">
+        <span class="logo-badge">V</span>
+        <span>Vibley</span>
+      </div>
+      <nav>
+        <a class="btn btn-ghost" href="#waitlist">Join Waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <h1 class="headline">Meet People<br /><span class="headline-gradient">Who Match Your Vibe 💫</span></h1>
+          <p class="sub">Vibley is where real connections start — no swiping, no pressure, just genuine people who share your energy.</p>
+          <div class="highlight-box">😩 <strong>Tired of endless swiping?</strong><br />💬 Vibley helps you discover authentic people near you — for friendships, meetups, and experiences that feel natural.</div>
+          <p class="muted" style="font-size:18px; margin-bottom:28px;">We believe the best friendships happen when vibes align. That’s why Vibley brings together people who simply <em>click</em> — no complicated profiles or algorithms, just shared interests and real-life energy.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#waitlist">Join the Early Waitlist</a>
+            <a class="btn btn-ghost" href="#how">How It Works</a>
+          </div>
+        </div>
+        <div>
+          <div class="card" role="img" aria-label="People meeting and enjoying local activities">
+            <svg viewBox="0 0 600 360" width="100%" height="100%" style="display:block; border-radius:14px"><defs><linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#6c4ef7"/><stop offset="100%" stop-color="#29c1f7"/></linearGradient></defs><rect x="0" y="0" width="600" height="360" fill="#0e1630"/><circle cx="120" cy="110" r="56" fill="url(#g1)" opacity="0.85"/><rect x="220" y="60" width="160" height="100" rx="14" fill="#19224a" stroke="#2b3a80"/><rect x="420" y="40" width="140" height="80" rx="14" fill="#19224a" stroke="#2b3a80"/><rect x="60" y="200" width="180" height="120" rx="16" fill="#19224a" stroke="#2b3a80"/><rect x="270" y="200" width="260" height="120" rx="16" fill="#19224a" stroke="#2b3a80"/><g transform="translate(300 235)" fill="#a8b1ff"><circle cx="20" cy="20" r="20"/><circle cx="70" cy="20" r="20"/><rect x="5" y="48" width="90" height="12" rx="6"/></g><g transform="translate(92 230)" fill="#a8b1ff"><rect x="0" y="0" width="116" height="12" rx="6"/><rect x="0" y="18" width="140" height="12" rx="6" opacity=".7"/><rect x="0" y="36" width="100" height="12" rx="6" opacity=".5"/></g></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>Simple. Genuine. Local.</h2>
+        <p class="muted">Vibley helps you skip the noise and meet people who actually share your vibe — because connections feel better when they’re real.</p>
+        <div class="steps">
+          <div class="step card"><div class="step-icon">🎯</div><h3>Find Your Vibe</h3><p class="muted">Join to explore communities that reflect your energy and interests.</p></div>
+          <div class="step card"><div class="step-icon">🤝</div><h3>Connect Authentically</h3><p class="muted">Meet genuine people nearby — no algorithms, just shared experiences.</p></div>
+          <div class="step card"><div class="step-icon">☕</div><h3>Meet IRL</h3><p class="muted">Enjoy local meetups, new friendships, and conversations that flow naturally.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section">
+      <div class="container grid-2" style="align-items:start">
+        <div>
+          <h2>Be an Early User</h2>
+          <p class="muted">🚀 Be one of the first to try Vibley. Join the early waitlist and help shape a new kind of social app — one built around <em>vibes, not validation</em>.</p>
+          <ul class="muted">
+            <li>⚡ Get early access invites</li>
+            <li>🛡️ Help us shape safety &amp; trust features</li>
+            <li>🎁 Exclusive perks for early supporters</li>
+          </ul>
+        </div>
+        <div class="card">
+          <form id="waitlist-form" action="https://script.google.com/macros/s/AKfycbylY83rcsS0VcIk1VJx1-VcpyahQFX9iwleyx2RlMfS-tJhQQSDNdobaXOpol48UPWzhA/exec" method="POST">
+            <div><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Alex" required /></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+            <div class="form-row"><div><label for="zip">Zip Code (optional)</label><input id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="77001" /></div><div><label for="age">Age Range</label><select id="age" name="age" required><option value="" disabled selected>Select</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45–54</option><option>55+</option></select></div></div>
+            <button class="btn btn-primary" type="submit">Join the Waitlist</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-grid">
+      <div class="logo" aria-label="Vibley"><span class="logo-badge">V</span><span>Vibley</span></div>
+      <div><span class="small">© <span id="y"></span> Vibley. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Waitlist form submit -> Apps Script Web App
+    const wlForm = document.getElementById('waitlist-form');
+    if (wlForm) {
+      wlForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) btn.disabled = true;
+        try {
+          const res = await fetch(form.action, { method: 'POST', body: data });
+          if (res.ok) {
+            form.innerHTML = "<p style='color:#29c1f7;font-weight:bold'>✅ Thanks! You're on the waitlist.</p>";
+          } else {
+            alert('Something went wrong. Please try again.');
+            if (btn) btn.disabled = false;
+          }
+        } catch (err) {
+          alert('Network error. Please try again.');
+          if (btn) btn.disabled = false;
+        }
+      });
+    }
+  </script>
+
+  <!-- Lightweight tests to prevent regressions -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        console.assert(document.title === 'Vibley — Meet People Who Match Your Vibe', 'Title mismatch');
+        console.assert(!!document.querySelector('#how'), '#how section missing');
+        console.assert(!!document.querySelector('#waitlist'), '#waitlist section missing');
+        const safetyItem = Array.from(document.querySelectorAll('#waitlist ul li')).find(li => /safety/.test(li.textContent));
+        console.assert(safetyItem && safetyItem.textContent.includes('safety & trust'), 'Ampersand rendering failed');
+        const action = document.querySelector('#waitlist-form')?.action || '';
+        console.assert(/\/exec($|\?)/.test(action), 'Form action is not Apps Script /exec URL');
+        console.info('All smoke tests passed ✅');
+      } catch (err) {
+        console.error('Test error:', err);
+      }
+    });
+  </script>
+</body>
+</html>
